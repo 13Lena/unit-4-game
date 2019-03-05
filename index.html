@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <title> Crystal Collector Game </title>
+
+        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+        <script src=""></script>
+
+</head>
+
+<body>
+    <header>
+        <h1>
+           Crystal Collector 
+        </h1>
+    </header>
+
+    <div class="gameBody">
+        <div class="points">
+            <div>
+                <h4>goal points</h4>
+                <br>
+                <h4><span id="computerPoints"></span></h4>
+
+            </div>
+            <div>
+                <h4>your points</h4>
+                <br>
+                <h4><span id="currentPoints"></span></h4>
+
+            </div>
+        </div>
+
+        <div class="game">
+            <img id="amathystBall" class="crystals" src="assets/images/amathyst-ball.jpg" alt="amathyst geod spere">
+            <img id="bigCrystal" class="crystals" src="assets/images/big-amathyst.jpg" alt="large, single, dark, smokey amathyst crystal">
+            <img id="pearAmathyst" class="crystals" src="assets/images/pear-amathyst.jpg" alt="pear shaped gem amathyst">
+            <img id="3crystals" class="crystals" src="assets/images/amathyst3spine.jpg" alt="three pale amathyst crystals on a bed of small white crystaline">
+        </div>
+
+        <div class="counters">
+            <h3>wins:<span id="winCounter">0</span></h3>
+            <h3>losses:<span id="lossCounter">0</span></h3>
+        </div>
+
+        <div id="instructions">
+            <p>The computer will choose a random point value for each gem, and a goal you will try to reach</p>
+            <br>
+            <p>Click each crystal to add points to your total, try and match the points without going over!</p>
+        </div>
+    
+    </div>
+</body>
+</html>
