@@ -39,7 +39,7 @@ function reset() {
     $('#currentPoints').text(currentPoints);
      } 
 
- function win() {
+function win() {
     winCounter++; 
     $('#winCounter').text(winCounter);
     reset();
@@ -53,14 +53,15 @@ function loss() {
 
 //clickys for jewels ==================================
 
+//for reset(){
 
 $('#amathystBall').on ('click', function(){
     currentPoints = (currentPoints + num1);
     $('#currentPoints').text(currentPoints);
-
+console.log(currentPoints);
     if (currentPoints === Random){
         win();
-    } else (currentPoints > Random); {
+    } else if (currentPoints > Random); {
         loss();
         };   
     }); 
@@ -68,10 +69,10 @@ $('#amathystBall').on ('click', function(){
 $('#bigCrystal').on ('click', function(){
     currentPoints = (currentPoints + num2);
     $('#currentPoints').text(currentPoints);
-
+console.log(currentPoints);
     if (currentPoints === Random){
         win();
-    } else (currentPoints > Random); {
+    } else if (currentPoints > Random); {
         loss();
           } 
     });
@@ -79,10 +80,10 @@ $('#bigCrystal').on ('click', function(){
 $('#pearAmathyst').on ('click', function(){
     currentPoints = (currentPoints + num3);
     $('#currentPoints').text(currentPoints);
-            
+console.log(currentPoints);
     if (currentPoints === Random){
         win();
-    } else (currentPoints > Random); {
+    } else if (currentPoints > Random); {
         loss();
         } 
     });
@@ -90,11 +91,12 @@ $('#pearAmathyst').on ('click', function(){
 $('#3crystals').on ('click', function(){
     currentPoints = (currentPoints + num4);
     $('#currentPoints').text(currentPoints);
-        
+console.log(currentPoints);
     if (currentPoints === Random){
         win();
-    } else (currentPoints > Random); {
+    } else if (currentPoints > Random); {
         loss(); {
         }
     }
 });  
+//}
