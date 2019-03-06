@@ -19,22 +19,22 @@
         </h1>
     </header>
 
-    <div class="gameBody">
-        <div class="points">
-            <div>
+    
+        <div class="clearfix">
+            <div id="compPoints">
                 <h4>goal points</h4>
                 <br>
-                <h4><span id="computerPoints"></span></h4>
+                <h4><span id="computerPoints">*</span></h4>
 
             </div>
-            <div>
+            <div id="playPoints">
                 <h4>your points</h4>
                 <br>
-                <h4><span id="currentPoints"></span></h4>
+                <h4><span id="currentPoints">0</span></h4>
 
             </div>
         </div>
-
+        <br>
         <div class="game">
             <img id="amathystBall" class="crystals" src="assets/images/amathyst-ball.jpg" alt="amathyst geod spere">
             <img id="bigCrystal" class="crystals" src="assets/images/big-amathyst.jpg" alt="large, single, dark, smokey amathyst crystal">
@@ -43,16 +43,15 @@
         </div>
 
         <div class="counters">
-            <h3>wins:<span id="winCounter">0</span></h3>
-            <h3>losses:<span id="lossCounter">0</span></h3>
+            <h3>wins: <span id="winCounter"></span></h3>
+            <h3>losses: <span id="lossCounter"></span></h3>
         </div>
 
         <div id="instructions">
             <p>The computer will choose a random point value for each gem, and a goal you will try to reach</p>
-            <br>
+        
             <p>Click each crystal to add points to your total, try and match the points without going over!</p>
         </div>
     
-    </div>
 </body>
 </html>
